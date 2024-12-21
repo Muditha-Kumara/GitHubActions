@@ -1,6 +1,9 @@
 export default {
-  transform: {},
+  transform: {
+    '^.+\\.jsx?$': 'babel-jest',
+  },
   testEnvironment: 'node',
+  extensionsToTreatAsEsm: ['.js'],
   globals: {
     'ts-jest': {
       useESM: true,
