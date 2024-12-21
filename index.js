@@ -14,7 +14,7 @@ export const handler = async (event) => {
 };
 
 // To run the handler function for testing purposes
-if (typeof jest === 'undefined' && import.meta.url === `file://${process.argv[1]}`) {
+if (typeof jest === 'undefined'){// && import.meta.url === `file://${process.argv[1]}`) {
   (async () => {
     const result = await handler();
     console.log(result);
